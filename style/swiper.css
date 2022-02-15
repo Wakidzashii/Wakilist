@@ -1,0 +1,36 @@
+
+.swiper {
+
+  width: 1680px;
+  height: 575px;
+  margin-top: 82px;
+ 
+}
+
+.swiper-slide {
+  display: flex;
+	flex-direction: column;
+
+}
+  .swiper-slide img {
+    display: block;
+    width: 311px;
+    height: 446px;;
+    object-fit: cover;
+    border-radius: 44px 44px 44px 0px;
+  }
+  
+  .swiper-slide_text{
+    position:relative;
+    font-weight: bold;
+font-size: 30px;
+line-height: 40px;
+margin-top: 20px;
+color: #FFFFFF;
+  }
+ 
+  .swiper-slide_text:hover {
+    border-bottom: 2px solid#e7f0f8;
+    padding-bottom: 2px;
+  
+  }
