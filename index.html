@@ -8,6 +8,7 @@
   <title>Your title</title>
   <link rel="stylesheet" href="style/swiper.css" />
   <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/adaptation.css" />
   <link rel="stylesheet" href="style/scrollbar.css" />
   <link rel="stylesheet" href="style/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,11 +21,114 @@
     <header class="header" id="anchor-to-header">
       <div class="container">
         <div class="logo">
-          <img src="./img/wezom_logo 1.svg" />
+          <img class="logo_wezom1" src="./img/wezom_logo 1.svg" />
+          
+            
+         
           <div class="catalog">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+
+              <div class="mobile_menu_basket-tov"> 
+                <img class="logo_wezom2" src="./img/wezom_logo 1.svg" /> 
+                <div class="basket_user_mobile">
+                  <ul class="lang">
+                    <li class="lang_option"><a href="#">Ua</a></li>
+                    <div class="circle"></div>
+                    <li class="lang_option"><a href="#">Ru</a></li>
+                  </ul>
+                  <li class="lang_option"><a href="#">Войти</a></li>
+                  <a href="#"><img src="img/user.svg" alt="" /></a>
+                </div>
+              </div>
+             
+
+
+
+
+
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/power 1.svg" />
+                  <a href="#">Турбины</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/cartridge.svg" />
+                  <a href="#">Картриджи</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/geometry.svg" />
+                  <a href="#">Геометрии</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/aktuator.svg" />
+                  <a href="#">Актуаторы</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/servoprivod.svg" />
+                  <a href="#">Сервоприводы</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/prokladki.svg" />
+                  <a href="#">Прокладки</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/zap4asti.svg" />
+                  <a href="#">Прочие запчасти</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/aktuator2.svg" />
+                  <a href="#">Электронновакуумные <br />
+                    актуаторы</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/body-tourbine.svg" />
+                  <a href="#">Корпуса турбины</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+              <div class="dropdown_item">
+                <div class="dropdown_title">
+                  <img class="dropdown_icon" src="./img/zap4asti 2.svg" />
+                 
+                  <a href="#">Запчасти для сервопривода</a>
+                </div>
+                <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
+              </div>
+            </ul>
+           </div>
             <div class="dropdown">
               <img class="drop_icon" src="./img/catalog.svg" />
               <div class="dropbtn">каталог</div>
+              
               <div id="myDropdown" class="dropdown-content">
                 <div class="dropdown_item">
                   <div class="dropdown_title">
@@ -93,6 +197,7 @@
                 <div class="dropdown_item">
                   <div class="dropdown_title">
                     <img class="dropdown_icon" src="./img/zap4asti 2.svg" />
+                   
                     <a href="#">Запчасти для сервопривода</a>
                   </div>
                   <img class="dropdown_icon-Path2" src="./img/Path2.svg" />
@@ -152,7 +257,7 @@
               <button class="basketbtn">
                 <li class="basket_user_link">
                   <a href="#">3</a>
-                  <svg fill="#33485D" width="30px" height="30px">
+                  <svg fill="#33485D" >
                     <use xlink:href="./img/shopping-cart.svg#shopping-cart"></use>
                   </svg>
                 </li>
@@ -172,7 +277,7 @@
                   <button class="busket_product_btn">
                     Оформить заказ<img src="img/shopping-cart (1) 2.svg" alt="" />
                   </button>
-                  <div class="basket_edit">Редактировать заказ</div>
+                  <a href="#" class="basket_edit">Редактировать заказ</a>
                 </div>
               </div>
             </div>
@@ -187,39 +292,40 @@
           <div class="top_content_circle_transparent_three"></div>
           <div class="top_content_categories">
             <h1 class="top_content_categories_one"> Популярные категории</h1>
-            <li class="top_content_categories_two box">все категории</li>
+            <a href="#" class="top_content_categories_two box">все категории</a>
           </div>
 
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/image 1.png" alt="">
+              <div class="swiper-slide"><img src="img/image 1.png" alt=""> <div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Косметика и <br> гигиена</div>
+               
               </div>
-              <div class="swiper-slide down"><img src="img/image 2.png" alt="">
+              <div class="swiper-slide down"><img src="img/image 2.png" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Техника и электроника</div>
               </div>
-              <div class="swiper-slide"><img src="img/image 3.png" alt="">
+              <div class="swiper-slide"><img src="img/image 3.png" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Повседневная одежда</div>
               </div>
-              <div class="swiper-slide down"><img src="img/image 4.png" alt="">
+              <div class="swiper-slide down"><img src="img/image 4.png" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Одежда и обувь </div>
               </div>
-              <div class="swiper-slide"><img src="img/image 5.png" alt="">
+              <div class="swiper-slide"><img src="img/image 5.png" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Сапоги и туфли </div>
               </div>
-              <div class="swiper-slide down"><img src="img/img 6.png" alt="">
+              <div class="swiper-slide down"><img src="img/img 6.png" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Универсальное</div>
               </div>
-              <div class="swiper-slide"><img src="img/img 7.jfif" alt="">
+              <div class="swiper-slide"><img src="img/img 7.jfif" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Спортивная обувь</div>
               </div>
-              <div class="swiper-slide down"><img src="img/img 8.jfif" alt="">
+              <div class="swiper-slide down"><img src="img/img 8.jfif" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Нижнее бельё</div>
               </div>
-              <div class="swiper-slide"><img src="img/img 9.jfif" alt="">
+              <div class="swiper-slide"><img src="img/img 9.jfif" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Сумки и кошельки </div>
               </div>
-              <div class="swiper-slide down"><img src="img/img 10.jfif" alt="">
+              <div class="swiper-slide down"><img src="img/img 10.jfif" alt=""><div class="swiper-slide_circle"></div>
                 <div class="swiper-slide_text"> Сапоги и туфли</div>
               </div>
             </div>
@@ -256,6 +362,7 @@
           <div class="pop_product_wave">
             <div class="pop_product_card">
               <img class="pop_product_card-img" src="./img/wave.svg" alt="">
+
               <div class="pop_product_card-item">
                 <div>Текст карточки первый </div>
                 <div class="pop_product_card_text">
@@ -265,6 +372,7 @@
                   <div>— 15 min</div>
                 </div>
               </div>
+
               <div class="pop_product_card-item">
                 <div>Текст карточки второй </div>
                 <div class="pop_product_card_text">
@@ -273,6 +381,7 @@
                   </svg>
                   <div>— 20 min</div>
                 </div>
+                
               </div>
               <div class="pop_product_card-item">
                 <div>Текст карточки третий </div>
@@ -296,19 +405,25 @@
           </div>
         </div>
         <section class="cards_container">
-          <div class="card1 card"><a href="#">Снаряжение</a></div>
-          <div class="card2 card"><a href="#">Оружие</a></div>
+          <div class="cards_container_one-block">
+            <div class="inside_container_one-block">
+          <div class=" card"> <img class="card1"  src="./img/Rectangle 123.png" alt=""><a class="card" href="#">Снаряжение</a> </div>
+          <div class="card"><img class="card2" src="./img/Rectangle 124.svg" alt=""><a href="#">ножи и инструменты</a></div>
+            </div>
+          <div class="card"><img class="card3" src="./img/Rectangle 125.svg" alt=""><a href="#"> Оружие</a></div>
+        </div>
+           
 
-          <dav class="inside_container">
-            <div class="card3 card"><a href="#">патроны</a></div>
-            <div class="card4 card"><a href="#">аксессуары</a></div>
-          </dav>
-
-          <div class="card5 card"><a href="#">ножи и инструменты</a></div>
-          <div class="card6 card"><a href="#">Тир</a></div>
+      <div class="cards_container_two-block">
+         <div class="inside_container_two-block">
+            <div class="card"><img class="card4" src="./img/Rectangle 126.svg" alt=""><a href="#"> патроны </a></div>
+          <div class="card"><img class="card5" src="./img/Rectangle 127.svg" alt=""><a href="#">аксессуары</a></div>
+        </div>
+          <div class="card"><img class="card6" src="./img/Rectangle 128.svg"alt=""><a href="#">Тир</a></div>
+        </div>
         </section>
 
-
+  
 
 
         <div class="swiper scrollbar">
@@ -321,7 +436,7 @@
                     <img src="img/Balance-min.svg" />
                     <img class="icon__play" src="img/play-button 1.svg" />
                   </div>
-                  <div class="news label1"><a href="">НОВИНКА</a></div>
+                  <div class="news label1">НОВИНКА</div>
 
 
                   <div class="feed"><img src="img/Rectangle 149.png" /></div>
@@ -348,7 +463,7 @@
                   </div>
 
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -365,7 +480,7 @@
                     <img src="img/Balance-min.svg" />
 
                   </div>
-                  <div class="label2 news"><a href="">АКЦИЯ</a></div>
+                  <div class="label2 news">АКЦИЯ</div>
 
 
                   <div class="feed"><img src="img/Rectangle 149.png" /></div>
@@ -389,7 +504,7 @@
                     <div class="price_item2">27 632.65₴</div>
                   </div>
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -406,7 +521,7 @@
                     <img src="img/Balance-min.svg" />
 
                   </div>
-                  <div class="label3 news"><a href="">-70%</a></div>
+                  <div class="label3 news">-70%</div>
 
                   <div class="feed"><img src="img/Rectangle 149.png"></div>
 
@@ -430,7 +545,7 @@
                     <div class="price_item2 black">27 632.65₴</div>
                   </div>
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -446,7 +561,7 @@
                     <img src="img/Balance-min.svg" />
                     <img src="img/play-button 1.svg" />
                   </div>
-                  <div class="label4 news"><a href="">ТОП ПРОДАЖ</a></div>
+                  <div class="label4 news">ТОП ПРОДАЖ</div>
 
 
                   <div class="feed"><img src="img/Rectangle 149.png" /></div>
@@ -470,7 +585,7 @@
                     <div class="price_item2">27 632.65₴</div>
                   </div>
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -486,7 +601,7 @@
                     <img src="img/Balance-min.svg" />
                     <img class="icon__play" src="img/play-button 1.svg" />
                   </div>
-                  <div class="news label1"><a href="">НОВИНКА</a></div>
+                  <div class="news label1">НОВИНКА</div>
                   <div class="feed"><img src="img/Rectangle 149.png" /></div>
                 </div>
                 <div class="price">
@@ -508,7 +623,7 @@
                   </div>
 
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -525,7 +640,7 @@
                     <img src="img/Balance-min.svg" />
 
                   </div>
-                  <div class="label2 news"><a href="">АКЦИЯ</a></div>
+                  <div class="label2 news">АКЦИЯ</div>
 
 
                   <div class="feed"><img src="img/Rectangle 149.png" /></div>
@@ -549,7 +664,7 @@
                     <div class="price_item2">27 632.65₴</div>
                   </div>
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -566,7 +681,7 @@
                     <img src="img/Balance-min.svg" />
 
                   </div>
-                  <div class="label3 news"><a href="">-70%</a></div>
+                  <div class="label3 news">-70%</div>
 
                   <div class="feed"><img src="img/Rectangle 149.png"></div>
 
@@ -590,7 +705,7 @@
                     <div class="price_item2 black">27 632.65₴</div>
                   </div>
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -606,7 +721,7 @@
                     <img src="img/Balance-min.svg" />
                     <img src="img/play-button 1.svg" />
                   </div>
-                  <div class="label4 news"><a href="">ТОП ПРОДАЖ</a></div>
+                  <div class="label4 news">ТОП ПРОДАЖ</div>
 
 
                   <div class="feed"><img src="img/Rectangle 149.png" /></div>
@@ -630,7 +745,7 @@
                     <div class="price_item2">27 632.65₴</div>
                   </div>
                   <button class="price_top_busket">
-                    <svg fill="#33485D" width="21px" height="21px" class="busket">
+                    <svg class="price_top_busket-icon" fill="#33485D" width="21px" height="21px" class="busket">
                       <use xlink:href="./img/basket.svg#basket"></use>
                     </svg>
                     <div class="price_top_busket-text"> Купить </div>
@@ -713,19 +828,20 @@
                 <div class="up__btn__text">Вверх</div>
               </div>
             </div>
-            <div class="cookies-wrapper active">
-              <div class="cookies-description">Этот сайт использует файлы cookies для более комфортной работы
-                пользователя.
-                Продолжая просмотр страниц сайта, вы соглашаетесь с использованием файлов cookies.<br> Если вам нужна
-                дополнительная информация или вы не хотите соглашаться с использованием cookies, пожалуйста, посетите
-                страницу "Про cookies"</div>
-              <button class="notification_btn"> Согласен</button>
-            </div>
+           
           </div>
 
         </div>
       </div>
     </footer>
+    <div class="cookies-wrapper active">
+      <div class="cookies-description">Этот сайт использует файлы cookies для более комфортной работы
+        пользователя.
+        Продолжая просмотр страниц сайта, вы соглашаетесь с использованием файлов cookies.<br> Если вам нужна
+        дополнительная информация или вы не хотите соглашаться с использованием cookies, пожалуйста, посетите
+        страницу "Про cookies"</div>
+      <button class="notification_btn"> Согласен</button>
+    </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script/swiper.js"></script>
